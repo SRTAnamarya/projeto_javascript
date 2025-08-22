@@ -48,7 +48,7 @@ criando estilo da modal login e cadastrar
     visibility: visible;
 }
 
-.modal-login, .modal-registrer{
+.modal-login, .modal-register{
     position: fixed;
     top: 0;
     left: 0;
