@@ -5,6 +5,24 @@ const modalregister = document.querySelector("#modal-register");
 const btncancelLogin = document.querySelector("#btn-cancel-login");
 const btncancelregister = document.querySelector("#btn-cancel-register");
 
+function soma(num01, num02) {
+    const somar = num01 + num02;
+    console.log(somar);
+
+}
+soma(8, 9)
+
+// arrow function
+const multiplicar = (num01, num02) => {
+    return num01 * num02
+}
+console.log(multiplicar(5, 89))
+
+const dividir = (num01, num02) => {
+    return num01 / num02
+}
+console.log(dividir(9.2))
+// addEventlistener = executa a função do click
 btnLogin.addEventListener("click", (e) => {
     modallogin.classList.remove("hide-modal");
     modallogin.classList.add("show-modal")
@@ -15,12 +33,12 @@ btnRegister.addEventListener("click", (e) => {
     modalregister.classList.add("show-modal")
 })
 
-btncancelLogin.addEventListener("click", (e) =>{
+btncancelLogin.addEventListener("click", (e) => {
     modallogin.classList.add("hide-modal");
     modallogin.classList.remove("show-modal")
 })
 
-btncancelregister.addEventListener("click", (e) =>{
+btncancelregister.addEventListener("click", (e) => {
     modalregister.classList.add("hide-modal");
     modalregister.classList.remove("show-modal")
 })
