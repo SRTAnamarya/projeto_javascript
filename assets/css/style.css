@@ -38,6 +38,12 @@ button:hover {
 criando estilo da modal login e cadastrar
 *******************************************/
 
+.content-modal-login, .content-modal-register{
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
 .hide-modal{
     opacity: 0;
     visibility: hidden;
@@ -59,4 +65,37 @@ criando estilo da modal login e cadastrar
     justify-content: center;
     background: rgba(0, 0, 0, 0.7);
     transition: all ease-in-out;
+}
+
+/*******************
+estilo dos btn
+******************************/
+
+.btn-login-open{
+    border:0.3rem solid rgb(138, 5, 5);
+    background-color: white;
+    color: black;
+}
+
+.btn-login-open:hover{
+    background: rgb(250, 36, 36);
+    color: black;
+}
+
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.input input{
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0.5rem;    
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 0.5rem solid rgb(138, 5, 5);
 }

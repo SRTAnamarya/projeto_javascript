@@ -4,6 +4,9 @@ const modallogin = document.querySelector("#modal-login");
 const modalregister = document.querySelector("#modal-register");
 const btncancelLogin = document.querySelector("#btn-cancel-login");
 const btncancelregister = document.querySelector("#btn-cancel-register");
+const btnloginOpen = document.querySelector("#btn-login-open")
+const inputEmail = document.querySelector("#email")
+const resultado = document.querySelector("#resultado" )
 
 function soma(num01, num02) {
     const somar = num01 + num02;
@@ -41,4 +44,12 @@ btncancelLogin.addEventListener("click", (e) => {
 btncancelregister.addEventListener("click", (e) => {
     modalregister.classList.add("hide-modal");
     modalregister.classList.remove("show-modal")
+})
+
+// inputEmail.addEventListener("input", () => {
+//     resultado.innerHTML = inputEmail.value
+// })
+
+inputEmail.addEventListener("focus", ()=>{
+    inputEmail.style.borderBottom = "0.5rem solid rgb(32, 240, 255)"
 })
